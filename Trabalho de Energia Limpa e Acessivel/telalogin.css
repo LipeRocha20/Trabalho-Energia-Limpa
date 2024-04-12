@@ -1,0 +1,23 @@
+/* Adicionando estilos para o formulário de login */
+.login-form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+.login-form button {
+    padding: 10px 20px;
+    background-color: #0072c6;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #005fa3;
+}

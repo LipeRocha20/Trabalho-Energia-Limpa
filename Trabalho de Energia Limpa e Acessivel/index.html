@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tela de Registro</title>
+<style>
+body {
+    background: linear-gradient(45deg, rgb(212, 175, 55), rgb(31, 48, 94));
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* 100% da altura da viewport */
+    overflow: hidden; /* Para garantir que não haja scroll vertical */
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgb(66, 65, 65);
+    color: white; /* Adicionando a cor do texto branco */
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: white; /* Cor do texto branco */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid lightblue; /* Azul claro */
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255); /* Fundo preto para os campos */
+    color: rgb(0, 0, 0); /* Cor do texto nos campos */
+}
+
+.form-group input[type="submit"] {
+    background-color: rgb(102, 210, 218); /* Botao */
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>Tela de Registro</h2>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="123.456.789-00" required>
+        </div>
+        <div class="form-group">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" pattern="\(\d{2}\) \d{5}-\d{4}" placeholder="(99) 99999-9999" required>
+        </div>
+        <div class="form-group">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+        <div class="form-group">
+            <label for="ano_nascimento">Ano que Nasceu:</label>
+            <input type="number" id="ano_nascimento" name="ano_nascimento" min="1900" max="2022" required>
+        </div>
+        <div class="form-group">
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Entrar">
+        </div>
+    </form>
+</div>
+</body>
+</html>
